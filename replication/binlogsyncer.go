@@ -15,8 +15,8 @@ import (
 	"github.com/pingcap/errors"
 	"github.com/siddontang/go-log/log"
 
-	"github.com/go-mysql-org/go-mysql/client"
-	. "github.com/go-mysql-org/go-mysql/mysql"
+	"github.com/tiancheng92/go-mysql/client"
+	. "github.com/tiancheng92/go-mysql/mysql"
 )
 
 var (

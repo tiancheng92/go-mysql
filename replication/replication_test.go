@@ -13,8 +13,8 @@ import (
 	"github.com/google/uuid"
 	. "github.com/pingcap/check"
 
-	"github.com/go-mysql-org/go-mysql/client"
-	"github.com/go-mysql-org/go-mysql/mysql"
+	"github.com/tiancheng92/go-mysql/client"
+	"github.com/tiancheng92/go-mysql/mysql"
 )
 
 // Use docker mysql to test, mysql is 3306, mariadb is 3316

@@ -3,10 +3,10 @@ package main
 import (
 	"net"
 
-	"github.com/go-mysql-org/go-mysql/mysql"
-	"github.com/go-mysql-org/go-mysql/server"
-	"github.com/go-mysql-org/go-mysql/test_util/test_keys"
 	"github.com/siddontang/go-log/log"
+	"github.com/tiancheng92/go-mysql/mysql"
+	"github.com/tiancheng92/go-mysql/server"
+	"github.com/tiancheng92/go-mysql/test_util/test_keys"
 
 	"crypto/tls"
 	"time"

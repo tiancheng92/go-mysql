@@ -20,8 +20,3 @@ require (
 	golang.org/x/text v0.3.6 // indirect
 	golang.org/x/tools v0.0.0-20201125231158-b5590deeca9b // indirect
 )
-
-
-replace (
-	github.com/go-mysql-org/go-mysql => github.com/tiancheng92/go-mysql
-)

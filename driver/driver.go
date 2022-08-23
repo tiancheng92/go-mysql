@@ -12,10 +12,10 @@ import (
 	"regexp"
 	"sync"
 
-	"github.com/go-mysql-org/go-mysql/client"
-	"github.com/go-mysql-org/go-mysql/mysql"
 	"github.com/pingcap/errors"
 	"github.com/siddontang/go/hack"
+	"github.com/tiancheng92/go-mysql/client"
+	"github.com/tiancheng92/go-mysql/mysql"
 )
 
 var customTLSMutex sync.Mutex

@@ -9,8 +9,8 @@ import (
 	"crypto/tls"
 	"fmt"
 
-	. "github.com/go-mysql-org/go-mysql/mysql"
 	"github.com/pingcap/errors"
+	. "github.com/tiancheng92/go-mysql/mysql"
 )
 
 var (
