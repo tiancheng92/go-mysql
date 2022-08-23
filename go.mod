@@ -1,4 +1,4 @@
-module github.com/go-mysql-org/go-mysql
+module github.com/tiancheng92/go-mysql
 
 go 1.16
 
@@ -19,4 +19,9 @@ require (
 	go.uber.org/zap v1.16.0 // indirect
 	golang.org/x/text v0.3.6 // indirect
 	golang.org/x/tools v0.0.0-20201125231158-b5590deeca9b // indirect
+)
+
+
+replace (
+	github.com/go-mysql-org/go-mysql => github.com/tiancheng92/go-mysql
 )

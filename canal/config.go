@@ -70,7 +70,8 @@ type Config struct {
 	// discard row event without table meta
 	DiscardNoMetaRowEvent bool `toml:"discard_no_meta_row_event"`
 
-	Dump DumpConfig `toml:"dump"`
+	SkipDump bool       `toml:"skip_dump"`
+	Dump     DumpConfig `toml:"dump"`
 
 	UseDecimal bool `toml:"use_decimal"`
 	ParseTime  bool `toml:"parse_time"`

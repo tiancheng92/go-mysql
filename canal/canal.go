@@ -77,8 +77,10 @@ func NewCanal(cfg *Config) (*Canal, error) {
 
 	var err error
 
-	if err = c.prepareDumper(); err != nil {
-		return nil, errors.Trace(err)
+	if !cfg.SkipDump {
+		if err = c.prepareDumper(); err != nil {
+			return nil, errors.Trace(err)
+		}
 	}
 
 	if err = c.prepareSyncer(); err != nil {
@@ -214,7 +216,7 @@ func (c *Canal) run() error {
 
 	c.master.UpdateTimestamp(uint32(time.Now().Unix()))
 
-	if !c.dumped {
+	if !c.dumped && !c.cfg.SkipDump {
 		c.dumped = true
 
 		err := c.tryDump()
